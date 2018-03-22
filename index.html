@@ -5,44 +5,50 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  	<header class="main-header">  		
-  		<a class="main-header-logo">
-  			<img src="#" width="163" height="36" alt="Логотип Девайс">
-  		</a>
-  		<span>Поиск по сайту</span>
-  		<ul class="user-navigation">
-  		    <li class="login-link">Войти</li>
-  		</ul>
-  		<span class="compare"><a href="#">Сравнить</a></span>
-  		<span class="basket"><a href="#">Корзина</a></span>
-  		<nav class="main-navigation">    
+  	<header class="main-header">
+  		<nav class="main-navigation">  		
+  			<a class="main-header-logo">
+  				<img src="img/logo-device.png" width="164" height="36" alt="Логотип Девайс">
+  			</a>
+  			<form class="main-navigation-search" method="get" action="https://echo.htmlacademy.ru">
+  				<input class="main-navigation-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <label class="main-navigation-search-label" for="search">Поиск:</label>
+                <button class="main-navigation-search-btn" type="submit">Найти</button>  			
+  			</form>
+	  		<ul class="user-navigation">
+	  		    <li class="login-link">
+	  		    	<a class="login-link" href="login.html">Войти</a>
+	  		    </li>
+	  		</ul>
+	  		<span class="compare"><a href="compare.html">Сравнить</a></span>
+	  		<span class="basket"><a href="basket.html">Корзина</a></span>  		    
   			<ul class="site-navigation">
   				<li class="navigation-item">
-  					<a href="#">Каталог товаров</a>
+  					<a href="all-catalog.html">Каталог товаров</a>
   					<ul class="catalog">
   						<li class="catalog-section">
   							<ul class="section-list">
-  								<li  class="section-item"><a href="#">Виртуальная реальность</a></li>
+  								<li  class="section-item"><a href="vr.html">Виртуальная реальность</a></li>
   								<li class="section-item"><a href="catalog.html">Моноподы для селфи</li>
-  								<li class="section-item"><a href="#">Экшн-камеры</li>
+  								<li class="section-item"><a href="camera.html">Экшн-камеры</li>
   							</ul>
   						</li>
   						<li class="catalog-section">
   							<ul class="section-list">
-  								<li  class="section-item"><a href="#">Фитнес-браслеты</a></li>
-  								<li class="section-item"><a href="catalog.html">Умные часы</li>  								
+  								<li  class="section-item"><a href="fitness.html">Фитнес-браслеты</a></li>
+  								<li class="section-item"><a href="watch.html">Умные часы</li>  								
   							</ul>
   						</li>
   						<li class="catalog-section">
   							<ul class="section-list">
-  								<li  class="section-item"><a href="#">Квадрокоптеры</a></li>  								  								
+  								<li  class="section-item"><a href="copter">Квадрокоптеры</a></li>  								  								
   							</ul>
   						</li>  					
   					</ul>
   				</li>  				   
-  				<li class="navigation-item"><a href="#">Доставка</a></li>
-  				<li class="navigation-item"><a href="#">Гарантия</a></li>
-  				<li class="navigation-item"><a href="#">Контакты</a></li>
+  				<li class="navigation-item"><a href="delivery.html">Доставка</a></li>
+  				<li class="navigation-item"><a href="garanty.html">Гарантия</a></li>
+  				<li class="navigation-item"><a href="contacts.html">Контакты</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -50,9 +56,17 @@
   		<h1 class="visually-hidden">Девайс</h1>
   		<section class="promo">  			
   			<h2 class="visually-hidden">Хиты продаж</h2>
+  			<form class="promo-switch-form" method="get" action="https://echo.htmlacademy.ru">
+  				<input type="radio" class="promo-switch-input visually-hidden" id="promo-switch-1" name="promo-switch" checked>
+  				<label for="promo-switch-1">Слайд-1</label>
+  				<input type="radio" class="promo-switch-input visually-hidden" id="promo-switch-1" name="promo-switch">
+  				<label for="promo-switch-2">Слайд-2</label>
+  				<input type="radio" class="promo-switch-input visually-hidden" id="promo-switch-3" name="promo-switch">
+  				<label for="promo-switch-3">Слайд-3</label>
+  			</form>
   			<ul class="promo-list">
   				<li class="slide">
-  			       <img class="slide-image" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
+  			       <img class="slide-image" src="img/slider-selfie.png" width="384" height="486" alt="Селфи-палка">
   			       <div class="slide-description">
   				       <h3 class="slide-title">Делай селфи, <br>как Бен Стиллер!</h3>
   			           <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине.  				       
@@ -75,7 +89,7 @@
   			        </div>
   			    </li>
   			    <li class="slide">
-  			    	<img class="slide-image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+  			    	<img class="slide-image" src="img/slider-fitness.png" width="345" height="485" alt="Фитнес-браслет">
   			    	<div class="slide-description">
   			    		<h3 class="slide-title">Худеем <br>правильно!</h3>
   			    		<p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -89,7 +103,7 @@
   			    	</div>
   			    </li>
   			    <li class="slide">
-  			    	<img class="slide-image" src="img/slider-3" width="526" height="334" alt="Квадрокоптер">
+  			    	<img class="slide-image" src="img/slider-copter.png" width="526" height="334" alt="Квадрокоптер">
   			    	<div class="slide-description">
   			    		<h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
   			    		<p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -111,20 +125,20 @@
   		<section class="goods">
   			<h2 class="visually-hidden">Товары</h2>
   			<ul class="goods-list">
-  				<li class="goods-item"><a href="#">Виртуальная реальность</a></li>
+  				<li class="goods-item"><a href="vr.html">Виртуальная реальность</a></li>
   				<li class="goods-item"><a href="catalog.html">Моноподы для селфи</a></li>
-  				<li class="goods-item"><a href="#">Экшн-камеры</a></li>
-  				<li class="goods-item"><a href="#">Фитнес-браслеты</a></li>
-  				<li class="goods-item"><a href="#">Умные часы</a></li>
-  				<li class="goods-item"><a href="#">Квадрокоптеры</a></li>
+  				<li class="goods-item"><a href="camera.html">Экшн-камеры</a></li>
+  				<li class="goods-item"><a href="fitness.html">Фитнес-браслеты</a></li>
+  				<li class="goods-item"><a href="watch.html">Умные часы</a></li>
+  				<li class="goods-item"><a href="copter.html">Квадрокоптеры</a></li>
   			</ul> 
   		</section>
   		<section class="services">
   			<h2 class="visually-hidden">Услуги</h2>
   			<ul class="services-list">
-  				<li class="services-item"><a href="#">Доставка</a></li>
-  				<li class="services-item"><a href="#">Гарантия</a></li>
-  				<li class="services-item"><a href="#">Кредит</a></li>
+  				<li class="services-item"><a href="delivery.html">Доставка</a></li>
+  				<li class="services-item"><a href="garanty.html">Гарантия</a></li>
+  				<li class="services-item"><a href="credit.html">Кредит</a></li>
   			</ul>
   			<div class="service-section">
   				<h3 class="service-section-title">Доставка</h3>
@@ -142,10 +156,10 @@
   		<section class="brends">
   			<h2 class="visually-hidden">Бренды</h2>
   			<ul class="brend-list">
-  				<li class="brends-item"><a href="#"><img src="img/logo-1.png" width="260" height="100" alt="Djl"></a></li>
-  				<li class="brends-item"><a href="#"><img src="img/logo-2.png" width="260" height="100" alt="SPgadgets"></a></li>
-  				<li class="brends-item"><a href="#"><img src="img/logo-3.png" width="260" height="100" alt="GoPro"></a></li>
-  				<li class="brends-item"><a href="#"><img src="img/logo-4.png" width="260" height="100" alt="Vive"></a></li>  			
+  				<li class="brends-item"><a href="djl.html"><img src="img/logo-djl.png" width="260" height="100" alt="Djl"></a></li>
+  				<li class="brends-item"><a href="spgadgets.html"><img src="img/logo-spgadgets.png" width="260" height="100" alt="SPgadgets"></a></li>
+  				<li class="brends-item"><a href="gopro.html"><img src="img/logo-gopro.png" width="260" height="100" alt="GoPro"></a></li>
+  				<li class="brends-item"><a href="vive.html"><img src="img/logo-vive.png" width="260" height="100" alt="Vive"></a></li>  			
   			</ul>
   		</section>
   		<section class="information">
@@ -170,19 +184,21 @@
   		</section>
   	</main>
   	<footer class="main-footer">
-  		<div class="main-footer-logo">
-  			<img src="#" width="163" height="36" alt="Логотип Девайс">
-  		</div>
+  		<a class="main-footer-logo" href="#">
+  			<img src="img/logo-device-footer.png" width="164" height="36" alt="Логотип Девайс">
+  		</a>  		
   		<ul class="user-navigation">
-  		    <li class="login-link">Войти</li>
+  		    <li class="login-link">
+  		    	<a class="login-link" href="login.html">Войти</a>
+  		    </li>
   		</ul>
-  		<span class="compare"><a href="#">Сравнить</a></span>
-  		<span class="basket"><a href="#">Корзина</a></span>
+  		<span class="compare"><a href="compare.html">Сравнить</a></span>
+  		<span class="basket"><a href="basket.html">Корзина</a></span>
   		<p class="address">г. Москва, ул. Строителей 15</p>
   		<ul class="footer-services">
-  			<li class="footer-services-item"><a href="#">Доставка</a></li>
-  			<li class="footer-services-item"><a href="#">Гарантия</a></li>
-  			<li class="footer-services-item"><a href="#">Контакты</a></li>
+  			<li class="footer-services-item"><a href="delivery.html">Доставка</a></li>
+  			<li class="footer-services-item"><a href="garanty.html">Гарантия</a></li>
+  			<li class="footer-services-item"><a href="contacts.html">Контакты</a></li>
   		</ul>
   		<p class="phone">Тел.: +7(495)495-95-95</p>
   		<ul class="footer-social">
@@ -190,20 +206,25 @@
   			<li><a class="social-btn" href="#">Инстаграм</a></li>
   			<li><a class="social-btn" href="#">Твиттер</a></li>
   		</ul>
-  		<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+  		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   	</footer>
   	<section class="write-us">
   		<h2 class="visually-hidden">Напишите нам</h2>
-  		<p class="write-us-name">Ваше имя</p>
-  		<p class="write-us-mail">Ваш e-mail</p>
-  		<p class="write-us-text">Текст письма</p>
-  		<a class="button" href="#">Отправить</a>
-  		<span class="write-us-close">X</span>
+  		<form class="write-us-form" method="get" action="https://echo.htmlacademy.ru">
+  			<label for="name">Ваше имя:</label>
+  			<input class="write-us-input" type="text" id="name" name="name" placeholder="Имя Фамилия" value="">
+  			<label for="mail">Ваш e-mail:</label>
+  			<input class="write-us-input" type="e-mail" id="mail" name="mail" placeholder="email@example.com" value="">
+  			<label for="letter">Текст письма:</label>
+  			<textarea class="write-us-text" id="letter" name="letter" rows="5" >В свободной форме</textarea>  			
+  			<button class="button" type="submit">Отправить</button>
+  			<button class="modal-close" type="button">Закрыть</button>  			
+  		</form>  		
   	</section>
   	<section class="map">
   		<h2 class="visually-hidden">Как до нас добраться</h2>
   		<img src="img/map-big.jpg" width="960" height="559" alt="Карта">
-  		<span class="map-close">X</span>
+  		<button class="modal-close" type="button">Закрыть</button>
   	</section>
   </body>
 </html>
